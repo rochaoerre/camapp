@@ -9,38 +9,29 @@
  initial-scale=1.0, maximum-scale=1.0, user-scalable=no;"
  />
  <script type="text/javascript" charset="utf-8"
- src="phonegap.js" src="cordova.js"></script>
+ src="phonegap.js"></script>
  <script type="text/javascript" charset="utf-8">
-  
  function onBodyLoad() {
  document.addEventListener("deviceready", onDeviceReady,
  false);
  }
-  
  function onDeviceReady() {
  navigator.notification.alert("onDeviceReady");
  }
-  
  function takePhoto() {
  navigator.camera.getPicture(onCameraSuccess,
- onCameraError { quality: 50,
-    destinationType: Camera.DestinationType.FILE_URI });
+ onCameraError);
  }
-  
  function onCameraSuccess(imageURL) {
  navigator.notification.alert("onCameraSuccess: " +
  imageURL);
-  var image = document.getElementById('myImage');
-    image.src = imageURL;
  }
-  
  function onCameraError(e) {
  navigator.notification.alert("onCameraError: " + e);
  }
-  
  </script>
  </head>
- <body onload="onBodyLoad()">
+  <body onload="onBodyLoad()">
  <h1>Example 11-1</h1>
  <p>Using the PhoneGap Camera API<br />
  <input type="button" value="Take a Picture"
