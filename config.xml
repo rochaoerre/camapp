@@ -13,6 +13,8 @@
   <plugin name="cordova-plugin-dialogs"/>
   <plugin name="cordova-plugin-device"/>
   <plugin name="cordova-plugin-camera"/>
+  <plugin name="cordova-plugin-file" />
+  <plugin name="cordova-plugin-file-transfer"
   <access origin="*" />
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
