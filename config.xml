@@ -12,7 +12,7 @@
   <plugin name="cordova-plugin-whitelist" spec="1" />
   <plugin name="cordova-plugin-dialogs"/>
   <plugin name="cordova-plugin-device"/>
-  <plugin name="cordova-plugin-device-camera"/>
+  <plugin name="cordova-plugin-camera"/>
   <feature name="Device">
     <param name="android-package" value="org.apache.cordova.device.Device" />
 </feature>
