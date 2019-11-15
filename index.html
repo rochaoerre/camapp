@@ -29,6 +29,8 @@
  function onCameraSuccess(imageURL) {
  navigator.notification.alert("onCameraSuccess: " +
  imageURL);
+  var image = document.getElementById('myImage');
+    image.src = imageURL;
  }
   
  function onCameraError(e) {
