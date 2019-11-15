@@ -13,9 +13,6 @@
   <plugin name="cordova-plugin-dialogs"/>
   <plugin name="cordova-plugin-device"/>
   <plugin name="cordova-plugin-camera"/>
-  <feature name="Device">
-    <param name="android-package" value="org.apache.cordova.device.Device" />
-</feature>
   <access origin="*" />
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
